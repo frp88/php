@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<!-- BEGIN: Head -->
+
+<head>
+    <meta charset="utf-8">
+    <link href="../../dist/images/logoD.svg" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="LEFT4CODE">
+    <title>Controla Eventos</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="../../dist/css/app.css" />
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="app">
+    <!-- BEGIN: Mobile Menu -->
+    <div class="mobile-menu md:hidden">
+        <div class="mobile-menu-bar">
+            <a href="" class="flex mr-auto">
+                <img alt="Controla Eventos" class="w-6" src="../../dist/images/logo.svg">
+            </a>
+            <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2"
+                    class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+        </div>
+        <ul class="border-t border-theme-24 py-5 hidden">
+            <li>
+                <a href="../../dashboard/" class="menu">
+                    <div class="menu__icon"> <i data-feather="home"></i> </div>
+                    <div class="menu__title"> Dashboard </div>
+                </a>
+            </li>
+            <li>
+                <a href="../../tarefa/" class="menu">
+                    <div class="menu__icon"> <i data-feather="file-text"></i> </div>
+                    <div class="menu__title"> Agenda / Tarefas</div>
+                </a>
+            </li>
+            <li>
+                <a href="../../cliente/" class="menu">
+                    <div class="menu__icon"> <i data-feather="users"></i> </div>
+                    <div class="menu__title"> Clientes </div>
+                </a>
+            </li>
+            <li>
+                <a href="../" class="menu menu--active">
+                    <div class="menu__icon"> <i data-feather="message-square"></i> </div>
+                    <div class="menu__title"> Eventos </div>
+                </a>
+            </li>
+            <li>
+                <a href="../../fornecedor/" class="menu">
+                    <div class="menu__icon"> <i data-feather="inbox"></i> </div>
+                    <div class="menu__title"> Fornecedores </div>
+                </a>
+            </li>               
+            <li>
+                <a href="../../tipoevento/" class="menu">
+                    <div class="menu__icon"> <i data-feather="hard-drive"></i> </div>
+                    <div class="menu__title"> Tipos de Eventos </div>
+                </a>
+            </li>
+            <li>
+                <a href="../../tiposervico/" class="menu">
+                    <div class="menu__icon"> <i data-feather="credit-card"></i> </div>
+                    <div class="menu__title"> Tipos de Serviços </div>
+                </a>
+            </li>
+            <li>
+                <a href="../../usuario/" class="menu">
+                    <div class="menu__icon"> <i data-feather="user"></i> </div>
+                    <div class="menu__title"> Usuários </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- END: Mobile Menu -->
+    <div class="flex">
+        <!-- BEGIN: Side Menu -->
+        <nav class="side-nav">
+            <a href="../../dashboard/" class="intro-x flex items-center pl-5 pt-4">
+                <img alt="Midone Tailwind HTML Admin Template" class="w-6" src="../../dist/images/logo.svg">
+                <span class="hidden xl:block text-white text-lg ml-3">Controla<span class="font-medium">Eventos</span>
+                </span>
+            </a>
+            <div class="side-nav__devider my-6"></div>
+            <ul>
+                <li>
+                    <a href="../../dashboard/" class="side-menu">
+                        <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="side-menu__title"> Dashboard </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../tarefa/" class="side-menu">
+                        <div class="side-menu__icon"> <i data-feather="file-text"></i> </div>
+                        <div class="side-menu__title"> Agenda / Tarefas</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../cliente/" class="side-menu">
+                        <div class="side-menu__icon"> <i data-feather="users"></i> </div>
+                        <div class="side-menu__title"> Clientes </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../" class="side-menu side-menu--active">
+                        <div class="side-menu__icon"> <i data-feather="message-square"></i> </div>
+                        <div class="side-menu__title"> Eventos </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../fornecedor/" class="side-menu">
+                        <div class="side-menu__icon"> <i data-feather="inbox"></i> </div>
+                        <div class="side-menu__title"> Fornecedores </div>
+                    </a>
+                </li>               
+                <li>
+                    <a href="../../tipoevento/" class="side-menu">
+                        <div class="side-menu__icon"> <i data-feather="hard-drive"></i> </div>
+                        <div class="side-menu__title"> Tipos de Eventos </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../tiposervico/" class="side-menu">
+                        <div class="side-menu__icon"> <i data-feather="credit-card"></i> </div>
+                        <div class="side-menu__title"> Tipos de Serviços </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../usuario/" class="side-menu">
+                        <div class="side-menu__icon"> <i data-feather="user"></i> </div>
+                        <div class="side-menu__title"> Usuários </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END: Side Menu -->
+        <!-- BEGIN: Content -->
+        <div class="content">
+            <!-- BEGIN: Top Bar -->
+            <div class="top-bar">
+                <!-- BEGIN: Breadcrumb -->
+                <div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="../"
+                        class="">Eventos</a> <i data-feather="chevron-right" class="breadcrumb__icon"></i> <a
+                        href="" class="breadcrumb--active">Formulário</a> </div>
+                <!-- END: Breadcrumb -->
+                <!-- BEGIN: Search -->
+                <div class="intro-x relative mr-3 sm:mr-6">
+                    <!-- <div class="search hidden sm:block">
+                            <input type="text" class="search__input input placeholder-theme-13" placeholder="Search...">
+                            <i data-feather="search" class="search__icon"></i> 
+                        </div> -->
+                    <a class="notification sm:hidden" href=""> <i data-feather="search" class="notification__icon"></i>
+                    </a>
+
+                </div>
+                <!-- END: Search -->
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8 relative">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in">
+                        <img alt="Midone Tailwind HTML Admin Template" src="../../dist/images/profile-12.jpg">
+                    </div>
+                    <div class="dropdown-box mt-10 absolute w-56 top-0 right-0 z-20">
+                        <div class="dropdown-box__content box bg-theme-38 text-white">
+                            <div class="p-4 border-b border-theme-40">
+                                <div class="font-medium">Controla Eventos</div>
+                                <div class="text-xs text-theme-41"></div>
+                            </div>
+                            <div class="p-2">
+                                <a href=""
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+                                    <i data-feather="user" class="w-4 h-4 mr-2"></i> Perfil </a>
+                                <a href=""
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+                                    <i data-feather="lock" class="w-4 h-4 mr-2"></i> Alterar Senha </a>
+                                <a href=""
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+                                    <i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Ajuda </a>
+                            </div>
+                            <div class="p-2 border-t border-theme-40">
+                                <a id="btnSair" href="#"
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+                                    <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Sair </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+            <!-- END: Top Bar -->
+            <h2 id="titulo" class="intro-y text-lg font-medium mt-10">
+                Cadastrar novo evento
+            </h2>
+            <div class="grid grid-cols-12 mt-5">
+                <div class="intro-y col-span-12 ">
+                    <!-- BEGIN: Form Layout -->
+                    <div class="intro-y box p-5">
+                        <div class="grid grid-cols-12 gap-5">
+                            <div class="mt-2 col-span-12 sm:col-span-4">
+                                <label for="txtTitulo" title="Campo obrigatório">Título: *</label>
+                                <input type="text" id="txtTitulo" title="Campo obrigatório" class="input w-full border" placeholder="Digite o título">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-8">
+                                <label for="txtDescricao" title="Campo obrigatório">Descrição:</label>
+                                <input type="text" id="txtDescricao" class="input w-full border" placeholder="Digite a descrição">
+                            </div>
+                            <div id="divTipoEvento" class="mt-2 col-span-12 sm:col-span-6">
+                                <label for="selTipoEvento">Tipo de Evento: *</label>
+                                <select name="tipoevento" id="selTipoEvento" class="input w-full border">    
+                                    <option value="NN" disabled selected hidden>Selecione um tipo de evento</option>                                    
+                                </select>
+                            </div>
+                            <div id="divCliente" class="mt-2 col-span-12 sm:col-span-6">
+                                <label for="selCliente">Cliente: *</label>
+                                <select name="cliente" id="selCliente" class="input w-full border"> 
+                                    <option value="NN" disabled selected hidden>Selecione um cliente</option>                                   
+                                </select>
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-3">
+                                <label for="txtDataInicio">Data de Início:</label>
+                                <input type="date" id="txtDataInicio" class="input w-full border">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-3">
+                                <label for="txtHoraInicio">Hora de Início:</label>
+                                <input type="time" id="txtHoraInicio" class="input w-full border">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-3">
+                                <label for="txtDataFim">Data de Término:</label>
+                                <input type="date" id="txtDataFim" class="input w-full border">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-3">
+                                <label for="txtHoraFim">Hora de Término:</label>
+                                <input type="time" id="txtHoraFim" class="input w-full border">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-6">
+                                <label for="txtLocalCerimonia">Local da Cerimônia:</label>
+                                <input type="text" id="txtLocalCerimonia" class="input w-full border"
+                                    placeholder="Digite o local da cerimônia">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-6">
+                                <label for="txtLocalRecepcao">Local da Recepção:</label>
+                                <input type="text" id="txtLocalRecepcao" class="input w-full border"
+                                    placeholder="Digite o local da recepção">
+                            </div>
+                            <div class="mt-2 col-span-4 sm:col-span-4">
+                                <label for="txtQtdConvidados">Quantidade de Convidados:</label>
+                                <input type="number" id="txtQtdConvidados" class="input w-full border"
+                                    placeholder="Quantidade de convidados">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-8">
+                                <label for="txtHorariosDisponiveis">Horários Disponíveis:</label>
+                                <input type="text" id="txtHorariosDisponiveis" class="input w-full border"
+                                    placeholder="Digite os horários disponíveis">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-6">
+                                <label for="txtAlergias">Alergias:</label>
+                                <input type="text" id="txtAlergias" class="input w-full border"
+                                    placeholder="Noivos ou convidados possuem alergias?">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-6">
+                                <label for="txtObservacao">Observação:</label>
+                                <input type="text" id="txtObservacao" class="input w-full border"
+                                    placeholder="Digite a observação">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-6">
+                                <label for="selSituacao">Selecione uma situação:</label>                            
+                                <select name="situacao" id="selSituacao" class="input w-full border">
+                                    <option value="AG" selected>Agendado</option>
+                                    <option value="CA">Cancelado</option>
+                                    <option value="CO">Concluído</option>
+                                </select>                            
+                            </div>
+                           
+                            <!-- DADOS DE PAGAMENTO -->                         
+                            <div class="mt-2 col-span-12 sm:col-span-6">
+                                <label for="selFormaPgto">Selecione a forma de pagamento:</label>
+                                <select name="formpgto" id="selFormaPgto" class="input w-full border">
+                                    <option value="CR">Cartão (crédito)</option>
+                                    <option value="DE">Cartão (débito)</option>
+                                    <option value="CH">Cheque</option>
+                                    <option value="DI" selected>Dinheiro</option>
+                                    <option value="TR">Transferência</option>
+                                </select>                            
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-4">
+                                <label for="txtValor">Valor:</label>
+                                <input type="text" id="txtValor" class="input w-full border" onkeyup="formataMoeda(this);" placeholder="Digite o valor">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-4">
+                                <label for="txtQtdParcelas">Quantidade de parcelas:</label>
+                                <input type="text" id="txtQtdParcelas" class="input w-full border"
+                                    placeholder="Qtde. Parcelas">
+                            </div>
+                            <div class="mt-2 col-span-12 sm:col-span-4">
+                                <label for="txtDiaParcela">Dia da parcela:</label>
+                                <input type="text" id="txtDiaParcela" class="input w-full border"
+                                    placeholder="Dia de pgto. da parcela">
+                            </div>
+                        </div>
+                        <div class="text-left mt-5">
+                            <button type="button" id="btnSalvar"
+                                class="button w-24 bg-theme-1 text-white">Salvar</button>
+                            <button type="button" id="btnCancelar"
+                                class="button w-24 border text-gray-700 mr-1">Cancelar</button>
+                        </div>                      
+                    </div>
+                    <!-- END: Form Layout -->
+                </div>
+                <!-- END: Data List -->
+            </div>
+        </div>
+        <!-- END: Content -->
+    </div>
+    <!-- BEGIN: JS Assets-->
+
+    <script src="../../dist/js/app.js"></script>
+    <script src="../../assets/js/sweetalert2.js"></script>
+    <script type="text/javascript" src="../../assets/js/config.js"></script>
+    <script type="text/javascript" src="./evento-formulario.js"></script>
+    <!-- END: JS Assets-->
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+.painel{
+	color: #333;
+	background-color: #ddd;
+    padding: 15px;
+    border-radius: 10px
+}
+.btn-group{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.btn{
+    font-weight: bold;
+}
+
+.titulo {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.rodape {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+}
+ #textorodape{
+    align-items: center;
+    justify-content: center;
+}
+
+.margem-topo {
+    margin-top: 30px;
+}
+
+.tabela{
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: RGB(176, 214, 230)
+}
